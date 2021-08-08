@@ -17,6 +17,7 @@ void print_array_int(INT* array, INT size)
   {
     printf("%d ", array[i]);
   }
+  printf("\r\n");
 }
 
 void swap_int(INT* a, INT* b)
