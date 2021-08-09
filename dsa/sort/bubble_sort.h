@@ -10,7 +10,7 @@
 
 #ifndef LEETCODE_BUBBLE_SORT_H
 #define LEETCODE_BUBBLE_SORT_H
-#include "../../dsa/types/types.h"
+#include "../types/types.h"
 
 void bubble_sort_v1(INT* array, INT size, INT order);
 
