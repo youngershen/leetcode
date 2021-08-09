@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "algorithms/sort/bubble_sort.h"
+#include "dsa/sort/sort.h"
 
 int main(int argc, char** argv)
 {

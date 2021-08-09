@@ -13,7 +13,11 @@
 
 #include "../types/types.h"
 
-void insert_sort(INT* array, INT size, INT order);
+// 普通版本的插入排序
+void insert_sort_v1(INT* array, INT size, INT order);
+
+// 使用二分查找的插入排序
+void insert_sort_v2(INT* array, INT size, INT order);
 
 void test_insert_sort();
 
