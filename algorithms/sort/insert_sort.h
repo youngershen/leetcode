@@ -11,7 +11,7 @@
 #ifndef LEETCODE_INSERT_SORT_H
 #define LEETCODE_INSERT_SORT_H
 
-#include "../../types/types.h"
+#include "../../dsa/types/types.h"
 
 void insert_sort(INT* array, INT size, INT order);
 

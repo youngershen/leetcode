@@ -11,7 +11,7 @@
 #ifndef LEETCODE_UTILS_H
 #define LEETCODE_UTILS_H
 
-#include "types/types.h"
+#include "./dsa/types/types.h"
 
 void print_array_int(INT* array, INT size);
 

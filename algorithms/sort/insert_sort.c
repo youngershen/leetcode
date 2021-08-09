@@ -9,7 +9,7 @@
 */
 
 #include "insert_sort.h"
-#include "../../types/types.h"
+#include "../../dsa/types/types.h"
 #include "../../utils.h"
 
 void insert_sort(INT* array, INT size, INT order)
