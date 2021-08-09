@@ -19,6 +19,6 @@ void insert_sort_v1(INT* array, INT size, INT order);
 // 使用二分查找的插入排序
 void insert_sort_v2(INT* array, INT size, INT order);
 
-void test_insert_sort();
+void insert_sort_test();
 
 #endif //LEETCODE_INSERT_SORT_H

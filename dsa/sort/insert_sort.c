@@ -48,7 +48,7 @@ INT search(const INT* array,
     {
       if(index > array[i])
       {
-
+        result = i  - 1;
       }
     }
   }
@@ -62,12 +62,14 @@ INT binary_search(INT* array, INT start, INT stop, INT index)
 
 void insert_sort_v1(INT* array, INT size, INT order)
 {
-  for(int i = 0 ; i < size - 1; i ++)
+  for(int i = 1 ; i < size; i ++)
   {
-    for(int n = 1; n < size; n ++)
-    {
-
-    }
+    // find the position to insert
+    int index = search(array, 0, i, array[i], order);
+    // shift the element
+    shift(array, index + 1, i);
+    // insert the index
+    array[index] = array[i];
   }
 }
 
@@ -81,6 +83,8 @@ void insert_sort_v2(INT* array, INT size, INT order)
 
 void insert_sort_test()
 {
+  INT size = 5;
   INT array[5] = {1, 2, 3, 4, 5};
   insert_sort_v1(array, 5, 0);
+  print_array_int(array, size);
 }
