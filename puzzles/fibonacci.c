@@ -8,7 +8,8 @@
  * Email : shenyangang@163.com
 */
 #include <stdlib.h>
-#include "1.h"
+#include <stdio.h>
+#include "fibonacci.h"
 #include "../dsa/types/types.h"
 
 INT* allocate_memory(INT size)
@@ -17,6 +18,20 @@ INT* allocate_memory(INT size)
   return mem;
 }
 
+INT fibonacci(INT index)
+{
+  if(index == 1)
+  {
+    return 1;
+  }
+
+  if(index == 2)
+  {
+    return 1;
+  }
+
+  return fibonacci(index - 1) + fibonacci(index - 2);
+}
 
 INT* fibonacci_v1(INT* array, INT index)
 {
@@ -32,5 +47,7 @@ INT* fibonacci_v2(INT index)
 
 void fibonacci_test()
 {
-
+  INT index = 7;
+  INT result = fibonacci(index);
+  printf("the fibonacci number of %d is %d", index, result);
 }

@@ -8,10 +8,12 @@
  * Email : shenyangang@163.com
 */
 
-#ifndef LEETCODE_1_H
-#define LEETCODE_1_H
+#ifndef LEETCODE_FIBONACCI_H
+#define LEETCODE_FIBONACCI_H
 
 #include "../dsa/types/types.h"
+
+INT fibonacci(INT i);
 
 INT* fibonacci_v1(INT* array, INT index);
 
@@ -19,4 +21,4 @@ INT* fibonacci_v2(INT index);
 
 void fibonacci_test();
 
-#endif //LEETCODE_1_H
+#endif //LEETCODE_FIBONACCI_H
