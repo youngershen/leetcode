@@ -8,6 +8,7 @@
  * Email : shenyangang@163.com
 */
 
+#include <stdio.h>
 #include "decimal-scale.h"
 
 INT dec2oct(INT i)
@@ -15,7 +16,16 @@ INT dec2oct(INT i)
   return 1;
 }
 
+INT dec2bin(INT i)
+{
+  INT result = 0;
+  return 1;
+}
+
 void decimal_test()
 {
+  INT i = 99;
+  INT result = dec2bin(i);
 
+  printf("Result is %d. \r\n", result);
 }

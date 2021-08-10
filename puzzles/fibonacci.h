@@ -13,7 +13,7 @@
 
 #include "../dsa/types/types.h"
 
-INT fibonacci(INT i);
+INT fibonacci_index_v1(INT i);
 
 INT* fibonacci_v1(INT* array, INT index);
 

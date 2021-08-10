@@ -18,7 +18,11 @@ INT* allocate_memory(INT size)
   return mem;
 }
 
-INT fibonacci(INT index)
+
+/*
+ * 使用递归计算第 n 个 fibonacci.
+ */
+INT fibonacci_index_v1(INT index)
 {
   if(index == 1)
   {
@@ -30,12 +34,37 @@ INT fibonacci(INT index)
     return 1;
   }
 
-  return fibonacci(index - 1) + fibonacci(index - 2);
+  return fibonacci_index_v1(index - 1) + fibonacci_index_v1(index - 2);
 }
+
+/*
+ * 不使用递归求第 n 个 fibonacci
+ */
+INT fibonacci_index_v2(INT index)
+{
+
+  INT temp1 = 1; // n - 2
+  INT temp2 = 1; // n - 1
+  INT result = 0; // n
+
+  for(int i = 0; i < index - 2; i ++)
+  {
+    result = temp1 + temp2;
+    temp1 = temp2;
+    temp2 = result;
+  }
+  return result;
+}
+
 
 INT* fibonacci_v1(INT* array, INT index)
 {
-  INT* mem = allocate_memory(index);
+
+  if(array == NULL)
+  {
+    array = allocate_memory(index);
+  }
+
   return array;
 }
 
@@ -48,6 +77,6 @@ INT* fibonacci_v2(INT index)
 void fibonacci_test()
 {
   INT index = 7;
-  INT result = fibonacci(index);
-  printf("the fibonacci number of %d is %d", index, result);
+  INT result = fibonacci_index_v2(index);
+  printf("the fibonacci number of %d is %d \r\n", index, result);
 }
