@@ -8,6 +8,7 @@
  * Email : shenyangang@163.com
 */
 
+#include <stdlib.h>
 #include "../utils.h"
 #include "two-sum.h"
 
@@ -37,9 +38,9 @@
  * 输出：[0,1]
  *
  * 提示:
- * 2 <= nums.length <= 104
- * -109 <= nums[i] <= 109
- * -109 <= target <= 109
+ * 2 <= nums.length <= 10^4
+ * -10^9 <= nums[i] <= 10^9
+ * -10^9 <= target <= 10^9
  * 只会存在一个有效答案
  * 进阶：你可以想出一个时间复杂度小于 O(n2) 的算法吗？
  */
@@ -47,17 +48,33 @@
 INT* two_sum_v1(INT* array,
                 INT size,
                 INT target,
-                INT result_size)
+                INT* result_size)
 {
+  INT rsize = 2; // return size
+  *result_size = rsize;
+  INT* result = (INT*) malloc(sizeof(INT) * rsize);
 
+  for(INT i = 0; i < size; i ++)
+  {
+    for(INT n = 0 ; n< size; n ++ )
+    {
+      INT sum = array[i] + array[n];
+      if(sum == target && i != n )
+      {
+        *(result) = i;
+        *(result + 1) = n;
+      }
+    }
+  }
+  return result;
 }
 
 void two_sum_test()
 {
   INT array[5] = {1, 2, 3, 4, 5};
   INT size = 5;
-  INT target = 3;
+  INT target = 5;
   INT result_size = 2;
-  INT* result = two_sum_v1(array, size, target, result_size);
+  INT* result = two_sum_v1(array, size, target, &result_size);
   print_array_int(result, result_size);
 }

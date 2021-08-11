@@ -12,5 +12,8 @@
 #define LEETCODE_PUZLES_H
 
 #include "fibonacci.h"
+#include "decimal-scale.h"
+#include "tower-of-hanoi.h"
+#include "two-sum.h"
 
 #endif //LEETCODE_PUZLES_H

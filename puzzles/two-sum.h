@@ -13,7 +13,7 @@
 
 #include "../dsa/types/types.h"
 
-INT* two_sum_v1(INT* array, INT size, INT target, INT result_size);
+INT* two_sum_v1(INT* array, INT size, INT target, INT* result_size);
 
 void two_sum_test();
 

@@ -6,6 +6,8 @@ int main(int argc, char** argv)
 {
 //  bubble_sort_test();
 //  insert_sort_test()
-  fibonacci_test();
-return 0;
+//  fibonacci_test();
+
+  two_sum_test();
+  return 0;
 }
