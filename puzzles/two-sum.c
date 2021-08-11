@@ -45,6 +45,10 @@
  * 进阶：你可以想出一个时间复杂度小于 O(n2) 的算法吗？
  */
 
+/*
+ * 没有任何技术含量的暴力破解，
+ * 复杂度为 O(n^2)
+ */
 INT* two_sum_v1(INT* array,
                 INT size,
                 INT target,
@@ -67,6 +71,18 @@ INT* two_sum_v1(INT* array,
     }
   }
   return result;
+}
+
+/*
+ *
+ */
+INT* two_sum_v2(INT* array,
+                INT size,
+                INT target,
+                INT* result_size)
+
+{
+
 }
 
 void two_sum_test()
