@@ -13,6 +13,27 @@
 #include "../dsa/types/types.h"
 #include "decimal-scale.h"
 
+void reverse_string(STRING str)
+{
+
+}
+
+char binchar(INT i)
+{
+  return i == 0 ? '0': '1';
+}
+
+char octchar(INT i)
+{
+  char oct[16] = "01234567";
+  return oct[i];
+}
+
+char hexchar(INT i)
+{
+  char hex[16] = "0123456789ABCDEF";
+  return hex[i];
+}
 
 STRING dec2oct(STRING number)
 {
@@ -35,7 +56,7 @@ STRING dec2bin(STRING number)
 {
   INT n = atoi(number);
   INT size = 20;
-  char * decimal = (char*) malloc(sizeof(char) * size);
+  STRING decimal = (STRING) malloc(sizeof(char) * size);
 
   if(n == 0)
   {
@@ -43,24 +64,28 @@ STRING dec2bin(STRING number)
   }
   else
   {
-    int index = 0;
+    int length = 0;
     while( n != 0)
     {
       int bit = n % 2;
-      *(decimal + index) = (bit == 1 ? '1' : '0');
-      index += 1;
+      *(decimal + length) = (bit == 1 ? '1' : '0');
       n = n / 2;
-    }
+      length += 1;
 
-    *(decimal + index) = 'B';
-    *(decimal + index + 1) = '\0';
+      if(length >= (size - 2))
+      {
+        decimal = realloc(decimal, sizeof(char) * size);
+      }
+    }
+    *(decimal + length) = 'B';
+    *(decimal + length + 1) = '\0';
     return decimal;
   }
 }
 
 void decimal_scale_test()
 {
-  STRING number = "6";
+  STRING number = "99999";
   STRING ret = dec2bin(number);
 
   if(ret == NULL)
@@ -71,4 +96,8 @@ void decimal_scale_test()
   {
     printf("Result is %s. \r\n", ret);
   }
+
+  char a = hexchar(15);
+
+  printf("char is %c\r\n", a);
 }
