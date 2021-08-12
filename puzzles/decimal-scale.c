@@ -9,23 +9,66 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "../dsa/types/types.h"
 #include "decimal-scale.h"
 
-INT dec2oct(INT i)
+
+STRING dec2oct(STRING number)
 {
-  return 1;
+  STRING ret = "666";
+  return ret;
 }
 
-INT dec2bin(INT i)
+STRING dec2hex(STRING number)
 {
-  INT result = 0;
-  return 1;
+  STRING ret = "";
+  return ret;
 }
 
-void decimal_test()
+/*
+ * 十进制转二进制算法
+ *
+ *
+ */
+STRING dec2bin(STRING number)
 {
-  INT i = 99;
-  INT result = dec2bin(i);
+  INT n = atoi(number);
+  INT size = 20;
+  char * decimal = (char*) malloc(sizeof(char) * size);
 
-  printf("Result is %d. \r\n", result);
+  if(n == 0)
+  {
+    return NULL;
+  }
+  else
+  {
+    int index = 0;
+    while( n != 0)
+    {
+      int bit = n % 2;
+      *(decimal + index) = (bit == 1 ? '1' : '0');
+      index += 1;
+      n = n / 2;
+    }
+
+    *(decimal + index) = 'B';
+    *(decimal + index + 1) = '\0';
+    return decimal;
+  }
+}
+
+void decimal_scale_test()
+{
+  STRING number = "6";
+  STRING ret = dec2bin(number);
+
+  if(ret == NULL)
+  {
+    printf("Format error.\r\n");
+  }
+  else
+  {
+    printf("Result is %s. \r\n", ret);
+  }
 }

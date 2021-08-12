@@ -15,15 +15,17 @@
 
 
 // decimal to tocal
-INT dec2oct(INT i);
+STRING dec2oct(STRING number);
 
 // decimal to binary
-INT dec2bin(INT i);
+STRING dec2bin(STRING number);
+
+// binary to decimal
+STRING bin2dec(STRING number);
 
 // decimal to hexadecimal
-INT dec2hex(INT i);
+STRING dec2hex(STRING number);
 
-
-void decimal_test();
+void decimal_scale_test();
 
 #endif //LEETCODE_DECIMAL_SCALE_H
