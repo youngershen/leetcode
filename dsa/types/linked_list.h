@@ -13,11 +13,19 @@
 
 #include "types.h"
 
-typedef struct LLIST
+typedef struct NODE
 {
   INT payload;
-  struct LLIST * next;
+  struct NODE * next;
+}
+LINKED_LIST_NODE,
+* LINKED_LIST_HEAD;
 
-} LINKED_LIST;
+LINKED_LIST_HEAD linked_list_create();
+
+INT linked_list_append(LINKED_LIST_HEAD head,
+                       LINKED_LIST_NODE node);
+
+void linked_list_test();
 
 #endif //LEETCODE_LINKED_LIST_H
