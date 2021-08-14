@@ -28,10 +28,6 @@ INT linked_list_append(LINKED_LIST_HEAD head,
 void linked_list_test()
 {
   LINKED_LIST_HEAD list = linked_list_create();
-
   LINKED_LIST_NODE node;
   node.payload = 0;
-
-
-
 }
