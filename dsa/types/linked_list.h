@@ -26,6 +26,12 @@ LINKED_LIST_HEAD linked_list_create();
 INT linked_list_append(LINKED_LIST_HEAD head,
                        LINKED_LIST_NODE node);
 
+INT linked_list_remove();
+
+INT linked_list_search();
+
+INT linked_list_merge(LINKED_LIST_HEAD* l1, LINKED_LIST_HEAD* l2);
+
 void linked_list_test();
 
 #endif //LEETCODE_LINKED_LIST_H

@@ -20,7 +20,6 @@ LINKED_LIST_HEAD linked_list_create()
 INT linked_list_append(LINKED_LIST_HEAD head,
                        LINKED_LIST_NODE node)
 {
-
   *(head)->next = node;
   return 0;
 }
