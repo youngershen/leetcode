@@ -20,7 +20,9 @@
 
 void shift(INT* array, INT start, INT stop)
 {
-  for(int i = stop; i >= start; i --)
+  // start = 0
+  // stop = 1
+  for(int i = stop - 1; i >= start; i --)
   {
     array[i + 1] = array[i];
   }
@@ -40,7 +42,7 @@ INT search(const INT* array,
     {
       if(index < array[i])
       {
-        result = i - 1;
+        result = i;
         break;
       }
     }
@@ -48,7 +50,7 @@ INT search(const INT* array,
     {
       if(index > array[i])
       {
-        result = i  - 1;
+        result = i;
       }
     }
   }
@@ -72,10 +74,12 @@ void insert_sort_v1(INT* array, INT size, INT order)
   {
     // find the position to insert
     int index = search(array, 0, i, array[i], order);
+    // take out the current avlue
+    int temp = array[i];
     // shift the element
-    shift(array, index + 1, i);
+    shift(array, index, i);
     // insert the index
-    array[index] = array[i];
+    array[index] = temp;
   }
 }
 
@@ -92,5 +96,5 @@ void insert_sort_test()
   INT size = 5;
   INT array[5] = {1, 2, 3, 4, 5};
   insert_sort_v1(array, 5, 0);
-//  print_array_int(array, size);
+  print_array_int(array, size);
 }
