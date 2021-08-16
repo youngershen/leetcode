@@ -58,8 +58,15 @@ INT search(const INT* array,
   return result;
 }
 
-INT binary_search(INT* array, INT start, INT stop, INT index)
+INT binary_search(INT* array, INT start, INT stop, INT index, INT order)
 {
+  INT result = stop;
+
+  for(int i = start; i <= stop; i ++)
+  {
+
+  }
+
   return 0;
 }
 
@@ -89,7 +96,10 @@ void insert_sort_v1(INT* array, INT size, INT order)
  */
 void insert_sort_v2(INT* array, INT size, INT order)
 {
-
+  for(int i = 1; i < size; i++)
+  {
+    int index = binary_search(array, 0, i, array[i], order);
+  }
 }
 
 void insert_sort_test()
