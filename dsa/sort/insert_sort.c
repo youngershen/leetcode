@@ -94,7 +94,7 @@ void insert_sort_v2(INT* array, INT size, INT order)
 void insert_sort_test()
 {
   INT size = 5;
-  INT array[5] = {1, 2, 3, 4, 5};
-  insert_sort_v1(array, 5, 0);
+  INT array[5] = {1, 2, 1, 3, 1};
+  insert_sort_v1(array, size, 0);
   print_array_int(array, size);
 }
