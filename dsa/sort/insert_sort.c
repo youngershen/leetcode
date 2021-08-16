@@ -34,7 +34,7 @@ INT search(const INT* array,
            INT index,
            INT order)
 {
-  int result = 0;
+  int result = stop;
 
   for(int i = start; i < stop; i ++)
   {
@@ -51,6 +51,7 @@ INT search(const INT* array,
       if(index > array[i])
       {
         result = i;
+        break;
       }
     }
   }
@@ -94,7 +95,7 @@ void insert_sort_v2(INT* array, INT size, INT order)
 void insert_sort_test()
 {
   INT size = 5;
-  INT array[5] = {1, 2, 1, 3, 1};
-  insert_sort_v1(array, size, 0);
+  INT array[5] = {3,2,1,2,3};
+  insert_sort_v1(array, size, 1);
   print_array_int(array, size);
 }
