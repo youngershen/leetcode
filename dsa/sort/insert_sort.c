@@ -60,6 +60,12 @@ INT binary_search(INT* array, INT start, INT stop, INT index)
   return 0;
 }
 
+/*
+ * 1. 查找数据线要插入的位置
+ * 2. 顺序移动元素
+ * 3. 插入数据项
+ * 4. 重复直到排序完成
+ */
 void insert_sort_v1(INT* array, INT size, INT order)
 {
   for(int i = 1 ; i < size; i ++)
