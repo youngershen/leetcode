@@ -64,7 +64,7 @@ INT binary_search(INT* array, INT start, INT stop, INT index, INT order)
 
   for(int i = start; i <= stop; i ++)
   {
-
+    int temp = array[i];
   }
 
   return 0;
