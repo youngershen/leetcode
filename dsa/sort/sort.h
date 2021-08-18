@@ -11,8 +11,13 @@
 #ifndef LEETCODE_SORT_H
 #define LEETCODE_SORT_H
 
+#define ASC 0
+#define DESC 1
 #include "bubble_sort.h"
 #include "insert_sort.h"
 #include "quick_sort.h"
+#include "select_sort.h"
+
+typedef int ORDER;
 
 #endif //LEETCODE_SORT_H
