@@ -74,7 +74,7 @@ void bubble_sort_v1(INT* array, INT size, INT order)
 }
 
 /*
- * 第二个版本和第一个版本稍有不同, 第一个版本是从前完后冒泡，
+ * 第二个版本和第一个版本稍有不同, 第一个版本是从前往后冒泡，
  * 第二个版本是从后往前冒泡。
  *
  * 复杂度都是一样的，就是循环的写法有些差别。
@@ -146,9 +146,17 @@ void bubble_sort_v3(INT* array, INT size, INT order)
   }
 }
 
-/*
- *
- */
+void bubble_sort_v4(INT* array, INT size, INT order)
+{
+  for(int i = 0 ; i < size; i ++)
+  {
+    for(int n = 0; n < size - i; n++)
+    {
+
+    }
+  }
+}
+
 void bubble_sort_test(void)
 {
   INT size = 5;
