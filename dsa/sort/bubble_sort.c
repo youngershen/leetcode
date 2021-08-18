@@ -152,15 +152,20 @@ void bubble_sort_v4(INT* array, INT size, INT order)
   {
     for(int n = 0; n < size - i - 1; n++)
     {
-
+      if(array[n] < array[n + 1])
+      {
+        int temp = array[n];
+        array[n] = array[n + 1];
+        array[n + 1] = temp;
+      }
     }
   }
 }
 
 void bubble_sort_test(void)
 {
-  INT size = 5;
-  INT array[5] = {2, 1, 3, 4, 5,};
+  INT size = 10;
+  INT array[10] = {2, 1, 3, 5, 4, 12, 45, 3, 0, 1};
 
   bubble_sort_v4(array, size, 0);
   print_array_int(array, size);
