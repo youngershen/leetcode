@@ -1,6 +1,6 @@
 /*
  * Project: leetcode
- * File : 1.c
+ * File : fibonacci.c
  * Date : 2021/8/9 17:43
  * Author: Younger Shen <申延刚>
  * Web: https://github.com/youngershen

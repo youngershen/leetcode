@@ -148,9 +148,9 @@ void bubble_sort_v3(INT* array, INT size, INT order)
 
 void bubble_sort_v4(INT* array, INT size, INT order)
 {
-  for(int i = 0 ; i < size; i ++)
+  for(int i = 0 ; i < size - 1; i ++)
   {
-    for(int n = 0; n < size - i; n++)
+    for(int n = 0; n < size - i - 1; n++)
     {
 
     }
@@ -160,8 +160,8 @@ void bubble_sort_v4(INT* array, INT size, INT order)
 void bubble_sort_test(void)
 {
   INT size = 5;
-  INT array[5] = {2, 1, 3, 4, 5, };
+  INT array[5] = {2, 1, 3, 4, 5,};
 
-  bubble_sort_v3(array, size, 0);
+  bubble_sort_v4(array, size, 0);
   print_array_int(array, size);
 }
