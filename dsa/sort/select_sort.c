@@ -53,9 +53,9 @@ INT select_sort_v2(INT* array, INT size, INT order)
 
     if( i != target)
     {
-      int temp = array[i];
+      int t = array[i];
       array[i] = array[target];
-      array[target] = temp;
+      array[target] = t;
     }
   }
   return 0;
