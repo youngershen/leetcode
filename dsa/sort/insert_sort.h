@@ -17,7 +17,9 @@
 void insert_sort_v1(INT* array, INT size, INT order);
 
 // 使用二分查找的插入排序
-void insert_sort_v2(INT* array, INT size, INT order);
+
+// 插入排序的另一个变种
+void insert_sort_v3(INT* array, INT size, INT order);
 
 void insert_sort_test();
 
