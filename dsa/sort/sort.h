@@ -19,5 +19,6 @@
 #include "select_sort.h"
 
 typedef int ORDER;
+typedef int STATUS;
 
 #endif //LEETCODE_SORT_H
