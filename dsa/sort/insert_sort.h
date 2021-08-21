@@ -23,6 +23,8 @@ void insert_sort_v3(INT* array, INT size, INT order);
 
 void insert_sort_v4(INT* array, INT size, INT order);
 
+void insert_sort_v5(INT* array, INT size, INT order);
+
 void insert_sort_test();
 
 #endif //LEETCODE_INSERT_SORT_H
