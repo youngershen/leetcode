@@ -58,7 +58,7 @@ INT search(const INT* array,
   return result;
 }
 
-INT binary_search(INT* array, INT start, INT stop, INT index, INT order)
+INT binary_search(INT array[], INT start, INT stop, INT index, INT order)
 {
   INT result = stop;
 
