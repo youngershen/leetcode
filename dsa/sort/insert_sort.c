@@ -58,13 +58,13 @@ INT search(const INT* array,
   return result;
 }
 
-INT binary_search(INT array[], INT start, INT stop, INT index, INT order)
+INT binary_search(const INT * array, INT start, INT stop, INT index, INT order)
 {
   INT result = stop;
 
   for(int i = start; i <= stop; i ++)
   {
-    int temp = array[i];
+    int temp = *(array+i);
   }
 
   return 0;
