@@ -24,6 +24,9 @@ void bubble_sort_v5(INT* array, INT size, INT order);
 
 void bubble_sort_v6(INT* array, INT size, INT order);
 
+void bubble_sort_v7(INT* array, INT size, INT order);
+
+
 void bubble_sort_test(void);
 
 #endif //LEETCODE_BUBBLE_SORT_H
