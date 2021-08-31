@@ -34,6 +34,8 @@ void bubble_sort_v10(INT* array, INT si2ze, INT order);
 
 void bubble_sort_v11(INT* array, INT si2ze, INT order);
 
+void bubble_sort_v12(INT* array, INT si2ze, INT order);
+
 void bubble_sort_test(void);
 
 #endif //LEETCODE_BUBBLE_SORT_H
