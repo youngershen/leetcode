@@ -40,6 +40,7 @@ void bubble_sort_v13(INT* array, INT si2ze, INT order);
 
 void bubble_sort_v14(INT* array, INT si2ze, INT order);
 
+void bubble_sort_v15(INT* array, INT si2ze, INT order);
 
 void bubble_sort_test(void);
 
