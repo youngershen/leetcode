@@ -21,43 +21,6 @@ void bubble_sort_v3(INT* array, INT size, INT order);
 void bubble_sort_v4(INT* array, INT size, INT order);
 
 void bubble_sort_v5(INT* array, INT size, INT order);
-
-void bubble_sort_v6(INT* array, INT size, INT order);
-
-void bubble_sort_v7(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v8(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v9(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v10(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v11(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v12(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v13(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v14(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-void bubble_sort_v15(INT* array, INT si2ze, INT order);
-
 void bubble_sort_test(void);
 
 #endif //LEETCODE_BUBBLE_SORT_H
