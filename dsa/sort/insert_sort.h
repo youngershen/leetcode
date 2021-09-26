@@ -11,7 +11,7 @@
 #ifndef LEETCODE_INSERT_SORT_H
 #define LEETCODE_INSERT_SORT_H
 
-#include "../types/types.h"
+#include "../types/common.h"
 
 // 普通版本的插入排序
 void insert_sort_v1(INT* array, INT size, INT order);

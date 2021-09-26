@@ -9,7 +9,7 @@
 */
 
 #include "select_sort.h"
-#include "../types/types.h"
+#include "../types/common.h"
 #include "../../utils.h"
 
 /*

@@ -11,7 +11,7 @@
 #ifndef LEETCODE_LINKED_LIST_H
 #define LEETCODE_LINKED_LIST_H
 
-#include "types.h"
+#include "common.h"
 
 typedef struct NODE
 {

@@ -9,7 +9,7 @@
 */
 
 #include "insert_sort.h"
-#include "../../dsa/types/types.h"
+#include "../types/common.h"
 #include "../../utils.h"
 
 /*

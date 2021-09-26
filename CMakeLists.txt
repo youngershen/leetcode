@@ -6,8 +6,8 @@ set(CMAKE_C_STANDARD 99)
 add_executable(leetcode main.c
         dsa/sort/bubble_sort.c
         dsa/sort/bubble_sort.h
-        dsa/types/types.c
-        dsa/types/types.h
+        dsa/types/common.c
+        dsa/types/common.h
         utils.c
         utils.h
         dsa/sort/insert_sort.c
@@ -15,7 +15,7 @@ add_executable(leetcode main.c
         dsa/sort/sort.h
         quiz/fibonacci.c
         quiz/fibonacci.h
-        quiz/puzzles.h
+        quiz/quiz.h
         quiz/decimal-scale.c
         quiz/decimal-scale.h
         quiz/tower-of-hanoi.c

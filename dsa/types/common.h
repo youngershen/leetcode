@@ -8,8 +8,8 @@
  * Email : shenyangang@163.com
 */
 
-#ifndef LEETCODE_TYPES_H
-#define LEETCODE_TYPES_H
+#ifndef LEETCODE_COMMON_H
+#define LEETCODE_COMMON_H
 #define BOOL int8_t
 #define TRUE 0
 #define FALSE 1
@@ -33,4 +33,4 @@ typedef uint64_t UINT64;
 
 typedef char* STRING;
 
-#endif //LEETCODE_TYPES_H
+#endif //LEETCODE_COMMON_H

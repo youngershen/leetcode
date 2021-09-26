@@ -11,7 +11,7 @@
 #ifndef LEETCODE_DECIMAL_SCALE_H
 #define LEETCODE_DECIMAL_SCALE_H
 
-#include "../dsa/types/types.h"
+#include "../dsa/types/common.h"
 
 
 // decimal to tocal

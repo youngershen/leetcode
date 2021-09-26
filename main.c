@@ -3,7 +3,7 @@
 #include "dsa/types/linked_list.h"
 #include "dsa/types/seq_list.h"
 #include "dsa/sort/sort.h"
-#include "puzzles/puzzles.h"
+#include "quiz/quiz.h"
 
 int main(int argc, char** argv)
 {

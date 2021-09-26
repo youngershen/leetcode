@@ -11,7 +11,7 @@
 #ifndef LEETCODE_SELECT_SORT_H
 #define LEETCODE_SELECT_SORT_H
 
-#include "../types/types.h"
+#include "../types/common.h"
 #include "sort.h"
 
 INT select_sort_v1(INT* array, INT size, INT order);

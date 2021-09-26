@@ -11,7 +11,7 @@
 #ifndef LEETCODE_TWO_SUM_H
 #define LEETCODE_TWO_SUM_H
 
-#include "../dsa/types/types.h"
+#include "../dsa/types/common.h"
 
 INT* two_sum_v1(INT* array, INT size, INT target, INT* result_size);
 

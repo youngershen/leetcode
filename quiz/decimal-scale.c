@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../dsa/types/types.h"
+#include "../dsa/types/common.h"
 #include "decimal-scale.h"
 
 void reverse_string(STRING str)
@@ -94,7 +94,7 @@ void decimal_scale_test()
   }
   else
   {
-    printf("Result is %s. \r\n", ret);
+    printf("Result is %j2j. \r\n", ret);
   }
 
   char a = hexchar(15);

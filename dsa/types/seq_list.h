@@ -6,7 +6,7 @@
 #define LEETCODE_SEQ_LIST_H
 #define SEQ_LIST_DEFAULT_BUFFER 32
 
-#include "types.h"
+#include "common.h"
 
 typedef INT DATA;
 
