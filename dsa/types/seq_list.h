@@ -8,32 +8,38 @@
 
 #include "types.h"
 
-typedef INT32 DATA;
+typedef INT DATA;
 
 typedef struct SEQ_LIST{
   
   DATA * buffer;
-  INT32  length;
-  INT32  buffer_size;
+  INT  length;
+  INT  buffer_size;
   
 } SEQ_LIST, * SEQ_LIST_HEAD;
 
 SEQ_LIST_HEAD  seq_list_init();
 
-int seq_list_count(SEQ_LIST_HEAD head);
+INT seq_list_count(SEQ_LIST_HEAD head);
 
-int seq_list_append(SEQ_LIST_HEAD head, DATA data);
+INT seq_list_append(SEQ_LIST_HEAD head, DATA data);
 
-int seq_list_push(SEQ_LIST_HEAD head, DATA data);
+INT seq_list_push(SEQ_LIST_HEAD head, DATA data);
 
-int seq_list_insert(SEQ_LIST_HEAD head, DATA data);
+INT seq_list_insert(SEQ_LIST_HEAD head, DATA data);
 
-void seq_list_delete(SEQ_LIST_HEAD head, UINT32 index);
+INT seq_list_delete(SEQ_LIST_HEAD head, UINT32 index);
 
-void seq_list_merge(SEQ_LIST_HEAD head1, SEQ_LIST_HEAD head2);
+DATA seq_list_rand(SEQ_LIST_HEAD head);
 
-void seq_list_find(SEQ_LIST_HEAD head, DATA data);
+INT seq_list_merge(SEQ_LIST_HEAD head1, SEQ_LIST_HEAD head2);
 
-void seq_list_rest_buffer(SEQ_LIST_HEAD head);
+INT seq_list_find(SEQ_LIST_HEAD head, DATA data);
+
+DATA seq_list_get(SEQ_LIST_HEAD head, INT index);
+
+INT seq_list_rest_buffer(SEQ_LIST_HEAD head);
+
+void seq_list_test();
 
 #endif //LEETCODE_SEQ_LIST_H

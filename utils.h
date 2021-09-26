@@ -19,6 +19,6 @@ void swap_int(INT* a, INT* b);
 
 INT* get_rand_array_int(INT size);
 
-INT get_rand_int();
+INT get_rand_int(INT m);
 
 #endif //LEETCODE_UTILS_H

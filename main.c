@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dsa/types/linked_list.h"
+#include "dsa/types/seq_list.h"
 #include "dsa/sort/sort.h"
 #include "puzzles/puzzles.h"
-
-int test()
-{
-  int a = 1;
-  return 0;
-}
 
 int main(int argc, char** argv)
 {
@@ -21,8 +16,7 @@ int main(int argc, char** argv)
 //  decimal_scale_test();
 
 //  LINKED_LIST_HEAD list = linked_list_create();
-//  printf("%p\r\n", list);
-  printf("fuck\r\n");
+  seq_list_test();
   
   return 0;
 }

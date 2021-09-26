@@ -9,6 +9,8 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "utils.h"
 
 void print_array_int(INT* array, INT size)
@@ -25,4 +27,20 @@ void swap_int(INT* a, INT* b)
   int temp = *a;
   *a = *b;
   *b = temp;
+}
+
+INT* get_rand_array_int(INT size)
+{
+  INT* array = (INT*)malloc(sizeof(INT) * size);
+  
+  for(int i =  0; i < size; i ++)
+  {
+    array[i] = get_rand_int(100);
+  }
+  return array;
+}
+
+INT get_rand_int(INT m)
+{
+  return (int) rand() % m;
 }
