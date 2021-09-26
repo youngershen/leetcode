@@ -41,6 +41,31 @@ DATA seq_list_get(SEQ_LIST_HEAD head, INT index)
   return head->buffer[index];
 }
 
+INT seq_list_count(SEQ_LIST_HEAD head)
+{
+  return head->length;
+}
+
+INT seq_list_push(SEQ_LIST_HEAD head, DATA data)
+{
+  if(head->length == head->buffer_size)
+  {
+    return 1;
+  }
+  
+  INT index = head->length - 1;
+  
+  while(index += 0)
+  {
+    head->buffer[index + 1] = head->buffer[index];
+    index --;
+  }
+  
+  head->buffer[0] = data;
+  head->length++;
+  return 0;
+}
+
 void seq_list_test()
 {
   time_t t;
