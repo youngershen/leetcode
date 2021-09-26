@@ -23,4 +23,10 @@ add_executable(leetcode main.c
         dsa/types/linked_list.c
         dsa/types/linked_list.h
         puzzles/two-sum.c
-        puzzles/two-sum.h dsa/sort/quick_sort.c dsa/sort/quick_sort.h dsa/sort/select_sort.c dsa/sort/select_sort.h)
+        puzzles/two-sum.h
+        dsa/sort/quick_sort.c
+        dsa/sort/quick_sort.h
+        dsa/sort/select_sort.c
+        dsa/sort/select_sort.h
+        dsa/types/seq_list.c
+        dsa/types/seq_list.h dsa/types/array_list.c dsa/types/array_list.h)
