@@ -13,17 +13,17 @@ add_executable(leetcode main.c
         dsa/sort/insert_sort.c
         dsa/sort/insert_sort.h
         dsa/sort/sort.h
-        puzzles/fibonacci.c
-        puzzles/fibonacci.h
-        puzzles/puzzles.h
-        puzzles/decimal-scale.c
-        puzzles/decimal-scale.h
-        puzzles/tower-of-hanoi.c
-        puzzles/tower-of-hanoi.h
+        quiz/fibonacci.c
+        quiz/fibonacci.h
+        quiz/puzzles.h
+        quiz/decimal-scale.c
+        quiz/decimal-scale.h
+        quiz/tower-of-hanoi.c
+        quiz/tower-of-hanoi.h
         dsa/types/linked_list.c
         dsa/types/linked_list.h
-        puzzles/two-sum.c
-        puzzles/two-sum.h
+        quiz/two-sum.c
+        quiz/two-sum.h
         dsa/sort/quick_sort.c
         dsa/sort/quick_sort.h
         dsa/sort/select_sort.c
