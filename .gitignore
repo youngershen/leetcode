@@ -1,7 +1,10 @@
 .idea
 .vscode
-cmake-build-debug
+
 *.log
 *.*~
 *.~
 *.exe
+
+cmake-build-debug
+cmake-build-release
