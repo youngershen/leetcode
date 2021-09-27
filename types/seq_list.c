@@ -68,9 +68,8 @@ INT seq_list_push(SEQ_LIST_HEAD head, DATA data)
 
 void seq_list_test()
 {
-  time_t t;
-  srand((unsigned) time(&t));
-
+  init_rand_seed();
+  
   SEQ_LIST_HEAD list = seq_list_init();
   seq_list_append(list, 0);
   seq_list_append(list, 1);

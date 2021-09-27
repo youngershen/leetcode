@@ -21,4 +21,6 @@ INT* get_rand_array_int(INT size);
 
 INT get_rand_int(INT m);
 
+void init_rand_seed();
+
 #endif //LEETCODE_UTILS_H

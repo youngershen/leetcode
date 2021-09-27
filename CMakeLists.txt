@@ -29,4 +29,6 @@ add_executable(leetcode main.c
         sort/select_sort.c
         sort/select_sort.h
         types/seq_list.c
-        types/seq_list.h types/array_list.c types/array_list.h)
+        types/seq_list.h
+        types/array_list.c
+        types/array_list.h)

@@ -44,3 +44,9 @@ INT get_rand_int(INT m)
 {
   return (int) rand() % m;
 }
+
+void init_rand_seed()
+{
+  time_t t;
+  srand((unsigned) time(&t));
+}
