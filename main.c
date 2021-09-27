@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dsa/types/linked_list.h"
-#include "dsa/types/seq_list.h"
-#include "dsa/sort/sort.h"
+#include "types/linked_list.h"
+#include "types/seq_list.h"
+#include "sort/sort.h"
 #include "quiz/quiz.h"
 
 int main(int argc, char** argv)

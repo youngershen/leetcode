@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "seq_list.h"
-#include "../../utils.h"
+#include "../utils.h"
 
 SEQ_LIST_HEAD seq_list_init()
 {

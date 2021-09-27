@@ -4,15 +4,15 @@ project(leetcode C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(leetcode main.c
-        dsa/sort/bubble_sort.c
-        dsa/sort/bubble_sort.h
-        dsa/types/common.c
-        dsa/types/common.h
+        sort/bubble_sort.c
+        sort/bubble_sort.h
+        types/common.c
+        types/common.h
         utils.c
         utils.h
-        dsa/sort/insert_sort.c
-        dsa/sort/insert_sort.h
-        dsa/sort/sort.h
+        sort/insert_sort.c
+        sort/insert_sort.h
+        sort/sort.h
         quiz/fibonacci.c
         quiz/fibonacci.h
         quiz/quiz.h
@@ -20,13 +20,13 @@ add_executable(leetcode main.c
         quiz/decimal-scale.h
         quiz/tower-of-hanoi.c
         quiz/tower-of-hanoi.h
-        dsa/types/linked_list.c
-        dsa/types/linked_list.h
+        types/linked_list.c
+        types/linked_list.h
         quiz/two-sum.c
         quiz/two-sum.h
-        dsa/sort/quick_sort.c
-        dsa/sort/quick_sort.h
-        dsa/sort/select_sort.c
-        dsa/sort/select_sort.h
-        dsa/types/seq_list.c
-        dsa/types/seq_list.h dsa/types/array_list.c dsa/types/array_list.h)
+        sort/quick_sort.c
+        sort/quick_sort.h
+        sort/select_sort.c
+        sort/select_sort.h
+        types/seq_list.c
+        types/seq_list.h types/array_list.c types/array_list.h)

@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "fibonacci.h"
-#include "../dsa/types/common.h"
+#include "../types/common.h"
 
 INT* allocate_memory(INT size)
 {

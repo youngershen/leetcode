@@ -10,7 +10,7 @@
 
 #include "insert_sort.h"
 #include "../types/common.h"
-#include "../../utils.h"
+#include "../utils.h"
 
 /*
  * https://www.geeksforgeeks.org/insertion-sort/

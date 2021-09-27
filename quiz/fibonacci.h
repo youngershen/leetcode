@@ -11,7 +11,7 @@
 #ifndef LEETCODE_FIBONACCI_H
 #define LEETCODE_FIBONACCI_H
 
-#include "../dsa/types/common.h"
+#include "../types/common.h"
 
 INT fibonacci_index_v1(INT i);
 

@@ -10,7 +10,7 @@
 
 #include "select_sort.h"
 #include "../types/common.h"
-#include "../../utils.h"
+#include "../utils.h"
 
 /*
  * 插入排序

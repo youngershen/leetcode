@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "../dsa/types/common.h"
+#include "../types/common.h"
 #include "decimal-scale.h"
 
 void reverse_string(STRING str)

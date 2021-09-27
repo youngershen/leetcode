@@ -7,7 +7,7 @@
  * Cell: 13811754531
  * Email : shenyangang@163.com
 */
-#include "../../utils.h"
+#include "../utils.h"
 #include "bubble_sort.h"
 
 /*
