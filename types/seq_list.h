@@ -26,7 +26,7 @@ INT seq_list_append(SEQ_LIST_HEAD head, DATA data);
 
 INT seq_list_push(SEQ_LIST_HEAD head, DATA data);
 
-INT seq_list_insert(SEQ_LIST_HEAD head, DATA data);
+INT seq_list_insert(SEQ_LIST_HEAD head, INT index, DATA data);
 
 INT seq_list_delete(SEQ_LIST_HEAD head, UINT32 index);
 

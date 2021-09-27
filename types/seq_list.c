@@ -66,6 +66,11 @@ INT seq_list_push(SEQ_LIST_HEAD head, DATA data)
   return 0;
 }
 
+INT seq_list_insert(SEQ_LIST_HEAD head, INT index, DATA data)
+{
+  
+}
+
 void seq_list_test()
 {
   init_rand_seed();
@@ -81,5 +86,4 @@ void seq_list_test()
   
   INT* array = get_rand_array_int(100);
   print_array_int(array, 100);
-  
 }
