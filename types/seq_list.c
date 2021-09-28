@@ -37,7 +37,6 @@ DATA seq_list_get(SEQ_LIST_HEAD head, INT index)
   {
     return 1;
   }
-  
   return head->buffer[index];
 }
 
