@@ -42,17 +42,6 @@ INT seq_list_rest_buffer(SEQ_LIST_HEAD head);
 
 INT seq_list_is_full(SEQ_LIST_HEAD head);
 
-
-
-
-
-
-
-
-
-
-
-
 void seq_list_test();
 
 #endif //LEETCODE_SEQ_LIST_H
