@@ -41,7 +41,6 @@ DATA seq_list_get(SEQ_LIST_HEAD head, INT index);
 INT seq_list_rest_buffer(SEQ_LIST_HEAD head);
 
 INT seq_list_is_full(SEQ_LIST_HEAD head);
-INT seq_list_is_full(SEQ_LIST_HEAD head);
 
 
 
