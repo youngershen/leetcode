@@ -29,4 +29,6 @@ void insert_sort_v6(INT* array, INT size, INT order);
 
 void insert_sort_test();
 
+void insert_sort_test();
+
 #endif //LEETCODE_INSERT_SORT_H
