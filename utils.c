@@ -50,3 +50,4 @@ void init_rand_seed()
   time_t t;
   srand((unsigned) time(&t));
 }
+
