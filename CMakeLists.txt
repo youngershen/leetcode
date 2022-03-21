@@ -33,4 +33,6 @@ add_executable(leetcode main.c
         types/array_list.c
         types/array_list.h
         dsa/linked_list.c
-        dsa/linked_list.h dsa/dsa.c dsa/dsa.h)
+        dsa/linked_list.h
+        dsa/dsa.c
+        dsa/dsa.h)

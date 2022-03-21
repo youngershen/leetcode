@@ -12,32 +12,57 @@
 #include "dsa.h"
 #include "./linked_list.h"
 
-int fibonacci(int i)
+int fibonacci_a(int i)
 {
   if(i < 1)
   {
     return 0;
   }
   
-  if(1 == i)
+  if(i == 1)
   {
     return 1;
   }
   
-  if(2 == i)
+  if(i == 2)
   {
     return 1;
   }
   
-  return fibonacci(i - 1) + fibonacci( i - 2);
+  return fibonacci_a(i - 1) + fibonacci_a( i - 2);
 }
 
+int fibonacci_b(int i)
+{
+  if(i < 1)
+  {
+    return 0;
+  }
+
+  if(i == 1 || i == 2)
+  {
+    return 1;
+  }
+  
+  int a = 1;
+  int b = 1;
+  int c = 2;
+  
+  for(int n = 3; n <= i ; n ++)
+  {
+    int temp = c;
+    c = a + b;
+    a = b;
+    b = temp;
+  }
+  return c;
+}
 
 void dsa_test()
 {
   for(int i = 1; i < 10; i++)
   {
-    int n = fibonacci(i);
+    int n = fibonacci_b(i);
     printf("%d ", n);
   }
 }

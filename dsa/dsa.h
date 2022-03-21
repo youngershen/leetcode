@@ -13,6 +13,7 @@
 
 void dsa_test();
 
-int fibonacci(int i);
+int fibonacci_a(int i);
+int fibonacci_b(int i);
 
 #endif //LEETCODE_DSA_H
