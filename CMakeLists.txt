@@ -35,4 +35,8 @@ add_executable(leetcode main.c
         dsa/linked_list.c
         dsa/linked_list.h
         dsa/dsa.c
-        dsa/dsa.h)
+        dsa/dsa.h
+        c/c.c
+        c/c.h
+        cpp/cpp.cpp
+        cpp/cpp.h c/fibonacci.c c/fibonacci.h)
