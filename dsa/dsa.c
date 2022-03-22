@@ -48,12 +48,13 @@ int fibonacci_b(int i)
   int b = 1;
   int c = 2;
   
-  for(int n = 3; n <= i ; n ++)
+  for(int n = 3; n <= i ; n++)
   {
-    int temp = c;
+    int t = b;
+    
     c = a + b;
-    a = b;
-    b = temp;
+    b = c;
+    a = t;
   }
   return c;
 }
@@ -65,4 +66,5 @@ void dsa_test()
     int n = fibonacci_b(i);
     printf("%d ", n);
   }
+  
 }
