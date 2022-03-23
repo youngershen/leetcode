@@ -9,7 +9,6 @@
 */
 
 #include "cpp.h"
-
 int cpp_test()
 {
   return 0;

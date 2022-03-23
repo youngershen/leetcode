@@ -12,7 +12,13 @@
 #include "c.h"
 #include "fibonacci.h"
 
+int hello()
+{
+  printf("hello from c test \r\n");
+  return 0;
+}
+
 void c_test()
 {
-  printf("hello c programming language.\r\n");
+  fib_test();
 }

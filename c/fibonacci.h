@@ -11,4 +11,10 @@
 #ifndef LEETCODE_FIBONACCI_H
 #define LEETCODE_FIBONACCI_H
 
+int fibonacci(int i);
+int fibonacci_a(int i);
+int* fibonacci_b(int i);
+
+void fib_test();
+
 #endif //LEETCODE_FIBONACCI_H
