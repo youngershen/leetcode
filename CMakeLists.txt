@@ -39,4 +39,12 @@ add_executable(leetcode main.c
         c/c.c
         c/c.h
         cpp/cpp.cpp
-        cpp/cpp.h c/fibonacci.c c/fibonacci.h)
+        cpp/cpp.h
+        c/fibonacci.c
+        /fibonacci.h
+        c/struct.c
+        c/struct.h
+        c/union.c
+        c/union.h
+        c/pointer.c
+        c/pointer.h)

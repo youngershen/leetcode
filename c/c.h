@@ -13,5 +13,6 @@
 #include "fibonacci.h"
 
 void c_test();
+void type_test();
 
 #endif //LEETCODE_C_H

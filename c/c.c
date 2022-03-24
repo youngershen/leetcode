@@ -8,9 +8,15 @@
  * Email : shenyangang@163.com
 */
 
+#include "limits.h"
+#include "float.h"
+#include "d3d.h"
 #include "stdio.h"
 #include "c.h"
 #include "fibonacci.h"
+#include "pointer.h"
+#include "struct.h"
+#include "union.h"
 
 int hello()
 {
@@ -18,7 +24,15 @@ int hello()
   return 0;
 }
 
+int a = 100;
+
+void type_test()
+{
+  printf("%d", a);
+}
+
 void c_test()
 {
-  fib_test();
+//  fib_test();
+  type_test();
 }
