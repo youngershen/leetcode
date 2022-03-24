@@ -82,13 +82,15 @@ int* fibonacci_b(int i)
   *(buf + 1) = 1;
   *(buf + 2) = 1;
   
-  for(int n = 3; n <= i; i ++)
+  for(int n = 3; n <= i; n++)
   {
-    int temp = *(buf + n - 1);
-    *(buf + n) = *(buf + n - 1) + *(buf + n - 2);
-    *(buf + n - 2) = *(buf + n - 1);
-    *(buf + n - 1) = temp;
+    int * a = buf + n - 2;
+    int * b = buf + n - 1;
+    int * c = buf + n;
+    *c = *a + *b;
   }
+
+  *(buf) = *(buf + i);
   
   return buf;
 }
@@ -96,20 +98,21 @@ int* fibonacci_b(int i)
 void fibonacci_b_test()
 {
   int i = 5;
-  
   int * buf = fibonacci_b(i);
-  printf("%d\r\n", *(buf + 1));
+  for(int n = 1; n <= i; n++)
+  {
+    printf("%d ", *(buf + n));
+  }
+  printf("\n%d", *buf);
 }
 
 void fib_test()
 {
   for(int i = 0; i < 10; i++)
   {
-//    int n = fibonacci_a(i);
-//    printf("%d ", n);
+    int n = fibonacci_a(i);
+    printf("%d ", n);
   }
   
-  printf("\r\n");
-
-  fibonacci_b_test();
+//  fibonacci_b_test();
 }
