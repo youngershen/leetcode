@@ -16,7 +16,21 @@
 #include "stdio.h"
 #include "basic.h"
 
+int int_add(int a, int b)
+{
+  return a + b;
+}
+
+void int_add_test()
+{
+  int a = 3;
+  int b = 4;
+  int c = int_add(a, b);
+
+  printf("The sum of %d and %d is : %d \r\n", a, b, c);
+}
+
 void basic_test()
 {
-  printf("hello from basic_test \r\n");
+  int_add_test();
 }

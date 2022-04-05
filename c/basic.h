@@ -11,6 +11,11 @@
 #ifndef LEETCODE_BASIC_H
 #define LEETCODE_BASIC_H
 
+
+
+int int_add(int, int);
+void int_add_test();
+
 void basic_test();
 
 #endif //LEETCODE_BASIC_H
