@@ -47,4 +47,4 @@ add_executable(leetcode main.c
         c/union.c
         c/union.h
         c/pointer.c
-        c/pointer.h)
+        c/pointer.h c/types.c c/types.h c/basic.c c/basic.h)
