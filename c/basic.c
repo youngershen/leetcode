@@ -14,23 +14,38 @@
  */
 
 #include "stdio.h"
+#include "ctype.h"
 #include "basic.h"
 
-int int_add(int a, int b)
+
+STATUS hello_world(char * name)
+{
+  printf("Hello world : %s", name);
+  
+  return STATUS_OK;
+}
+
+UINT64 int_add(UINT64 a, UINT64 b)
 {
   return a + b;
 }
 
-void int_add_test()
+STATUS int_add_test()
 {
   int a = 3;
   int b = 4;
   int c = int_add(a, b);
 
   printf("The sum of %d and %d is : %d \r\n", a, b, c);
+  
+  return STATUS_OK;
 }
 
-void basic_test()
+STATUS basic_test()
 {
-  int_add_test();
+  hello_world("SYG");
+  //  int_add_test();
+
+
+  return STATUS_OK;
 }

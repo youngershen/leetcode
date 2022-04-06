@@ -11,11 +11,41 @@
 #ifndef LEETCODE_BASIC_H
 #define LEETCODE_BASIC_H
 
+#define STATUS int
+#define STATUS_OK 0
+#define STATUS_ERROR 1
+#define STATUS_EXCEPTION 2
 
+// redefine integer types
+#define UINT16 int
+#define UINT16 int
+#define UINT32 int
+#define INT32 int
+#define UINT64 int
+#define INT64 int
 
-int int_add(int, int);
-void int_add_test();
+// hello world
+STATUS hello_world(char *);
 
-void basic_test();
+// something basic about printf
+STATUS printf_test();
+
+// common data types
+STATUS type_test();
+
+// variables
+STATUS var_test();
+
+// array
+STATUS array_test();
+
+// string
+STATUS string_test();
+
+// add functions
+INT64 int_add(INT64, INT64);
+STATUS int_add_test();
+
+STATUS basic_test();
 
 #endif //LEETCODE_BASIC_H
