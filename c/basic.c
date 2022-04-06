@@ -21,6 +21,13 @@
 STATUS hello_world(char * name)
 {
   printf("Hello world : %s", name);
+  return STATUS_OK;
+}
+
+STATUS print_test()
+{
+  
+  
   
   return STATUS_OK;
 }

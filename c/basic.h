@@ -8,6 +8,15 @@
  * Email : shenyangang@163.com
 */
 
+/*
+ * 近期工作需要重新学习 C 语言,
+ * 这里包含了一些关于 C 语言的基础知识,
+ * 以及相关的文档, 供学习中的参考使用.
+ *
+ *  GLIBC WIKI : https://sourceware.org/glibc/wiki/HomePage
+ *
+ */
+
 #ifndef LEETCODE_BASIC_H
 #define LEETCODE_BASIC_H
 
