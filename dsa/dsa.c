@@ -10,5 +10,11 @@
 
 #include "stdio.h"
 #include "dsa.h"
-#include "./linked_list.h"
+#include "list/sequence_list.h"
+#include "list/linked_list.h"
 
+void dsa_test()
+{
+  printf("hello from dsa_test");
+  getchar();
+}

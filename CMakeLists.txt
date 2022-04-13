@@ -32,8 +32,8 @@ add_executable(leetcode main.c
         types/seq_list.h
         types/array_list.c
         types/array_list.h
-        dsa/linked_list.c
-        dsa/linked_list.h
+        dsa/list/linked_list.c
+        dsa/list/linked_list.h
         dsa/dsa.c
         dsa/dsa.h
         c/c.c
@@ -47,4 +47,4 @@ add_executable(leetcode main.c
         c/union.c
         c/union.h
         c/pointer.c
-        c/pointer.h c/types.c c/types.h c/basic.c c/basic.h)
+        c/pointer.h c/types.c c/types.h c/basic.c c/basic.h dsa/list/sequence_list.c dsa/list/sequence_list.h)

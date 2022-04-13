@@ -5,7 +5,7 @@
 int main(int argc, char** argv)
 {
 
-//  dsa_test();
 //  c_test();
+  dsa_test();
   return 0;
 }
