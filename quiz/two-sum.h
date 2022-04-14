@@ -11,12 +11,6 @@
 #ifndef LEETCODE_TWO_SUM_H
 #define LEETCODE_TWO_SUM_H
 
-#include "../types/common.h"
-
-INT* two_sum_v1(INT* array, INT size, INT target, INT* result_size);
-
-INT* two_sum_v2(INT* array, INT size, INT target, INT* result_size);
-
 void two_sum_test();
 
 #endif //LEETCODE_TWO_SUM_H

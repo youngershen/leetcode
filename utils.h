@@ -11,16 +11,4 @@
 #ifndef LEETCODE_UTILS_H
 #define LEETCODE_UTILS_H
 
-#include "types/common.h"
-
-void print_array_int(INT* array, INT size);
-
-void swap_int(INT* a, INT* b);
-
-INT* get_rand_array_int(INT size);
-
-INT get_rand_int(INT m);
-
-void init_rand_seed();
-
 #endif //LEETCODE_UTILS_H
