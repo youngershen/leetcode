@@ -21,6 +21,7 @@ typedef struct
 } * SEQLIST_PTR, SEQLIST;
 
 STATUS seqlist_init(SEQLIST_PTR ptr, int size);
+STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem);
 
 SEQLIST_PTR seqlist_create(int size);
 
