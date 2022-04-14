@@ -3,10 +3,9 @@ project(leetcode C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(leetcode main.c
-        utils.c
-        utils.h
-
+add_executable(
+        leetcode
+        main.c
         quiz/fibonacci.c
         quiz/fibonacci.h
         quiz/quiz.h

@@ -11,10 +11,12 @@
 #include "stdio.h"
 #include "dsa.h"
 #include "list/sequence_list.h"
-#include "list/linked_list.h"
 
 void dsa_test()
 {
-  printf("hello from dsa_test");
+  printf("hello from dsa_test\r\n");
+  
+  seqlist_test();
+  
   getchar();
 }

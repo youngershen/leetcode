@@ -10,6 +10,7 @@
 
 #ifndef LEETCODE_SEQUENCE_LIST_H
 #define LEETCODE_SEQUENCE_LIST_H
+#define STATUS int
 
 typedef struct
 {
@@ -19,7 +20,10 @@ typedef struct
   
 } * SEQLIST_PTR, SEQLIST;
 
-SEQLIST_PTR seqlist_init();
+STATUS seqlist_init(SEQLIST_PTR ptr, int size);
 
+SEQLIST_PTR seqlist_create(int size);
+
+void seqlist_test();
 
 #endif //LEETCODE_SEQUENCE_LIST_H
