@@ -14,47 +14,43 @@
 
 STATUS seqlist_init(SEQLIST_PTR ptr, int size)
 {
-  if(ptr)
+  if(ptr && size > 1)
   {
     ptr->size = size;
     ptr->length = 0;
-    ptr->buffer = (int *) malloc(sizeof(int) * size);
-    return 0;
+    int * buffer = (int *) malloc(sizeof(int) * size);
+    
+    if(buffer)
+    {
+      ptr->buffer = buffer;
+      return 0;
+    }
   }
-  else
-  {
-    return 1; // 空指针异常
-  }
+  return 1;
 }
 
 SEQLIST_PTR seqlist_create(int size)
 {
   SEQLIST_PTR ptr = (SEQLIST_PTR) malloc(sizeof(SEQLIST));
   
-  if(ptr)
+  if (ptr)
   {
     int ret = seqlist_init(ptr, size);
-    if( ret == 0)
+    if (ret == 0)
     {
       return ptr;
     }
-    else
-    {
-      NULL;
-    }
   }
-  else
-  {
-    return NULL;
-  }
+  return NULL;
 }
 
 void seqlist_test()
 {
-  SEQLIST_PTR ptr1 = seqlist_create(10);
+  SEQLIST_PTR ptr1 = seqlist_create(0);
   SEQLIST_PTR ptr2 = (SEQLIST_PTR) malloc(sizeof(SEQLIST));
-  seqlist_init(ptr2, 20);
+  int code = seqlist_init(ptr2, 0);
   
   printf("%p\r\n", ptr1);
-
+  printf("%p\r\n", ptr2);
+  printf("code : %d \r\n", code);
 }
