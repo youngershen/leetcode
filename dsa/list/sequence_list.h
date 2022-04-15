@@ -11,6 +11,8 @@
 #ifndef LEETCODE_SEQUENCE_LIST_H
 #define LEETCODE_SEQUENCE_LIST_H
 #define STATUS int
+#define DEFAULT_BUFFER_SIZE 10
+#define DEFAULT_EXTEND_BUFFER_SIZE 10
 
 typedef struct
 {
@@ -20,11 +22,13 @@ typedef struct
   
 } * SEQLIST_PTR, SEQLIST;
 
-STATUS seqlist_init(SEQLIST_PTR ptr, int size);
+STATUS seqlist_init(SEQLIST_PTR ptr);
 STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem);
 
-SEQLIST_PTR seqlist_create(int size);
+SEQLIST_PTR seqlist_create();
+STATUS seqlist_extend_buffer(SEQLIST_PTR ptr);
 
+void seqlist_print(SEQLIST_PTR ptr);
 void seqlist_test();
 
 #endif //LEETCODE_SEQUENCE_LIST_H
