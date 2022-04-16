@@ -23,9 +23,14 @@ typedef struct
 } * SEQLIST_PTR, SEQLIST;
 
 STATUS seqlist_init(SEQLIST_PTR ptr);
+void seqlist_init_test();
+
 STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem);
+void seqlist_insert_test();
 
 SEQLIST_PTR seqlist_create();
+void seqlist_create_test();
+
 STATUS seqlist_extend_buffer(SEQLIST_PTR ptr);
 
 void seqlist_print(SEQLIST_PTR ptr);

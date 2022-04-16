@@ -63,9 +63,17 @@ STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem)
     return 3; // 缓冲区已满, 直接退出函数
   }
   
-  if((ptr->size - ptr->length) == 1)
+  // 重新分配的阈值
+  int threshold = 1;
+  
+  if((ptr->size - ptr->length) <= threshold)
   {
-    return 4; // 缓冲区差一个满, 则要求重新分配内存
+    int code = seqlist_extend_buffer(ptr);
+    if( code != 0 )
+    {
+      // 分配内存失败
+      return 4;
+    }
   }
 
   if( ptr->length == 0)
@@ -75,7 +83,7 @@ STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem)
   else
   {
     // 出错处理完毕, 从这里开始插入流程 -1 ,-1
-    for(int i = ptr->length - 1; i >= pos - 1; i--)
+    for(int i = ptr->length - 1; i >= pos; i--)
     {
       // 计算出要移动到的位置, 也就是 i 的下一个元素的位置
       int dest = i + 1;
@@ -83,7 +91,7 @@ STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem)
       *(ptr->buffer + dest) = *(ptr->buffer + i);
     }
     // 移动元素完成之后, 在 pos 的位置插入 elem 元素
-    *(ptr->buffer + pos - 1) = elem;
+    *(ptr->buffer + pos) = elem;
   }
   // length 自增 1
   ptr->length += 1;
@@ -100,13 +108,56 @@ STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem)
  */
 STATUS seqlist_extend_buffer(SEQLIST_PTR ptr)
 {
+  if(!ptr)
+  {
+    // 空指针异常
+    return 1;
+  }
+  
+  if(!ptr->buffer)
+  {
+    // buffer 空指针异常
+    return 2;
+  }
+  
+  int size = ptr->size + DEFAULT_EXTEND_BUFFER_SIZE;
+  int * buffer = realloc(ptr->buffer, size);
+  
+  if(!buffer)
+  {
+    // realloc 空间失败
+    return 4;
+  }
+  
+  ptr->buffer = buffer;
+  ptr->size = size;
   return 0;
 }
 
 
+
+void seqlist_insert_test()
+{
+  SEQLIST_PTR ptr1 = seqlist_create();
+  for( int i = 0 ; i < 30; i ++)
+  {
+    seqlist_insert(ptr1, 0, i);
+  }
+  seqlist_print(ptr1);
+  
+  int code = seqlist_insert(ptr1, 0, 100);
+  printf("return code is : %d \r\n", code);
+
+}
+
+void seqlist_test()
+{
+  seqlist_insert_test();
+}
+
 void seqlist_print(SEQLIST_PTR ptr)
 {
-
+  
   if(!ptr)
   {
     // 空指针异常
@@ -118,20 +169,12 @@ void seqlist_print(SEQLIST_PTR ptr)
     // 空表异常
     printf("Empty list");
   }
-
+  
   for( int i = 0; i < ptr->length; i ++)
   {
     printf("%d ", *(ptr->buffer + i));
   }
-
+  
   printf("\r\n");
   printf("print complete\r\n");
-}
-
-void seqlist_test()
-{
-  SEQLIST_PTR ptr1 = seqlist_create();
-  seqlist_insert(ptr1, 0, 100);
-  seqlist_insert(ptr1, 1, 101);
-  seqlist_print(ptr1);
 }
