@@ -66,6 +66,7 @@ STATUS seqlist_insert(SEQLIST_PTR ptr, int pos, int elem)
   // 重新分配的阈值
   int threshold = 1;
   
+  
   if((ptr->size - ptr->length) <= threshold)
   {
     int code = seqlist_extend_buffer(ptr);
