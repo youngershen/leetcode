@@ -5,6 +5,6 @@
 int main(int argc, char** argv)
 {
   dsa_test();
-//  c_test();
-  return 0;
+  c_test();
+//  return 0;
 }
